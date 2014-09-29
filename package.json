@@ -1,0 +1,27 @@
+{
+  "name": "arduino_bulk_programmer",
+  "version": "1.0.0",
+  "description": "A program that uses an external button to start programming Arduinos. Can be connected up to lots of Arduinos in parallel making programming much faster.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bjpirt/arduinoBulkProgrammer"
+  },
+  "keywords": [
+    "arduino",
+    "programmer",
+    "bulk"
+  ],
+  "author": "Ben Pirt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bjpirt/arduinoBulkProgrammer/issues"
+  },
+  "homepage": "https://github.com/bjpirt/arduinoBulkProgrammer",
+  "dependencies": {
+    "flashing_buttons": ">= 1.0.0"
+  }
+}

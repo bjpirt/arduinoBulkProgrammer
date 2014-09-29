@@ -1,0 +1,8 @@
+{
+  "UIPort": "/dev/tty.usbserial-FTE3AQ5M",
+  "ArduinoPorts": [
+    "/dev/tty.wch ch341 USB=>RS232 1420"
+  ],
+  "avrdude": "/usr/local/CrossPack-AVR/bin/avrdude",
+  "baud": 57600
+}

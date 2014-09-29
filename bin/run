@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+
+var ProgrammerManager = require('../lib/index.js').ProgrammerManager;
+
+if(!fs.existsSync('./config.json')){
+  console.log("Missing config file. Copy config.example.json to config.json to get started");
+  process.exit(1);
+}
+
+if(process.argv.length > 2){
+  var hex_file = fs.realpathSync(process.argv[2]);
+}else{
+  console.log("Usage: run <hex file>");
+  process.exit(1);
+}
+
+fs.readFile('./config.json', function (err, data) {
+  if (err) throw err;
+  new ProgrammerManager(hex_file, JSON.parse(data));
+});
